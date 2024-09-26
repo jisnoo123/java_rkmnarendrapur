@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int i,n;
+    float sum;
+    printf("Enter The Value of n : ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        printf("+1/%d",i)}
+        sum=sum+(1/(float)i);
+        printf("\n%d",sum);
+    
+}
