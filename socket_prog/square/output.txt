@@ -1,0 +1,9 @@
+PS C:\Users\USER\Desktop\GIT\square> java server 
+Waiting for client ....
+Cient hit
+Received number:3
+
+PS C:\Users\USER\Desktop\GIT\square> java client
+Enter number:
+3
+3*3=9
