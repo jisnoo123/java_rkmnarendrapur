@@ -1,0 +1,24 @@
+Output 1:
+
+server:
+Server waiting for client
+client hit
+Server received: lol
+
+client side:
+Enter a string:
+lol
+lol is Palindrome
+
+Output 2:
+
+client side:
+Enter a string:
+Delhi
+Delhi is not Palindrome
+
+server side:
+Server waiting for client
+client hit
+Server received: Delhi
+
