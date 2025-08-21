@@ -53,6 +53,9 @@ class client{
                     bw.newLine();
                     bw.flush();
 
+                    // Read the message from the server
+                    String msg = br.readLine();
+                    System.out.println(msg);
                     break;
                 
                 case 2: 

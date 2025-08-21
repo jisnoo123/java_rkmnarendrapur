@@ -30,21 +30,29 @@ class server{
                 pst.setString(3, des);
                 pst.setString(4, sal);
 
+                String msg = "";
                 try{
                     int t = pst.executeUpdate();
 
                     if(t>0){
-                        System.out.println("Inserted Successfully");
+                        msg = "Inserted Successfully";
                     }
                     else{
-                        System.out.println("Insertion failed. Enter details properly");
+                        msg = "Insertion failed. Enter details properly";
                     }
-
+                    
+                    System.out.println(msg);
                 }
                 catch(Exception e){
-                    System.out.println("Primary Key Violated");
+                    msg = "Primary Key Violated";
+                    System.out.println(msg);
                 }
 
+                //Write the message to the client
+                bw.write(msg);
+                bw.newLine();
+                bw.flush();
+                
                 delimeter = br.readLine();
             }
 

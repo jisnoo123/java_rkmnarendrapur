@@ -1,0 +1,45 @@
+Server:
+Waiting for client ...
+Client hit
+Inserted Successfully
+Inserted Successfully
+Primary Key Violated
+Closing server...
+
+Client:
+Enter 1 to enter employee details or 2 to exit:
+1
+Enter name:
+Jisnoo
+Enter id:
+12345
+Enter des:
+Res Scientist
+Enter sal:
+250000
+Inserted Successfully
+Enter 1 to enter employee details or 2 to exit:
+1
+Enter name:
+Ritam Ghosh
+Enter id:
+45321
+Enter des:
+SW Dev
+Enter sal:
+2500
+Inserted Successfully
+Enter 1 to enter employee details or 2 to exit:
+1
+Enter name:
+Atmaza
+Enter id:
+12345
+Enter des:
+SW Engg.
+Enter sal:
+25000
+Primary Key Violated
+Enter 1 to enter employee details or 2 to exit:
+2
+
