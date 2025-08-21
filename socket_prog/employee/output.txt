@@ -43,3 +43,8 @@ Primary Key Violated
 Enter 1 to enter employee details or 2 to exit:
 2
 
+Data in DB:
+EDIT	NAME	EMPLOYEE_ID	DESIGNATION	SALARY
+Edit	Ritam Ghosh	45321	SW Dev	2500
+Edit	Jisnoo	12345	Res Scientist	250000
+row(s) 1 - 2 of 2		
