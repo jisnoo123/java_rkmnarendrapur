@@ -23,20 +23,17 @@ class server{
 
                 PreparedStatement pst = con.prepareStatement("SELECT * FROM jisnoo.EMPLOYEE where Employee_ID = ?");
                 pst.setString(1, id);
-
-                String msg = "";
                 
-                try{
-                    ResultSet rs = pst.executeQuery();
-                    String name, des, sal;
-                    
+                ResultSet rs = pst.executeQuery();
+                String name, des, sal;
+                
+                if(rs.next()){
                     // Write to client that data is found
                     bw.write("Found");
                     bw.newLine();
                     bw.flush();
 
                     // Point rs to the data row
-                    rs.next();
 
                     name = rs.getString("NAME");
                     id = rs.getString("EMPLOYEE_ID");
@@ -60,14 +57,13 @@ class server{
                     bw.write(sal);
                     bw.newLine();
                     bw.flush();
-
                 }
-                catch(Exception e){
+                else{
                     bw.write("Not Found");
                     bw.newLine();
                     bw.flush();
                 }
-
+    
                 delimeter = br.readLine();
             }
 
