@@ -21,11 +21,18 @@ class server{
             while(delimeter.equals("begin")){
                 String id = br.readLine();
 
-                PreparedStatement pst = con.prepareStatement("DELETE * FROM jisnoo.EMPLOYEE where EMPLOYEE_ID is '?'");
+                PreparedStatement pst = con.prepareStatement("DELETE FROM jisnoo.EMPLOYEE WHERE EMPLOYEE_ID = ?");
                 System.out.println("ID: " + id);
                 pst.setString(1, id);
                 
                 int t = pst.executeUpdate();
+
+                if(t>0){
+                    System.out.println("Successfully deleted");
+                }
+                else{
+                    System.out.println("Not deleted");
+                }
                 // String name, des, sal;
                 
                 // if(rs.next()){
