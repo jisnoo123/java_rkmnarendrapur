@@ -22,55 +22,16 @@ class server{
                 String id = br.readLine();
 
                 PreparedStatement pst = con.prepareStatement("DELETE FROM jisnoo.EMPLOYEE WHERE EMPLOYEE_ID = ?");
-                System.out.println("ID: " + id);
                 pst.setString(1, id);
                 
                 int t = pst.executeUpdate();
 
                 if(t>0){
-                    System.out.println("Successfully deleted");
+                    System.out.println("ID: " + id + " is successfully deleted");
                 }
                 else{
                     System.out.println("Not deleted");
                 }
-                // String name, des, sal;
-                
-                // if(rs.next()){
-                //     // Write to client that data is found
-                //     bw.write("Found");
-                //     bw.newLine();
-                //     bw.flush();
-
-                //     // Point rs to the data row
-
-                //     name = rs.getString("NAME");
-                //     id = rs.getString("EMPLOYEE_ID");
-                //     des = rs.getString("DESIGNATION");
-                //     sal = rs.getString("SALARY");
-
-                //     // Write each information seperately to the client
-
-                //     bw.write(name);
-                //     bw.newLine();
-                //     bw.flush();
-
-                //     bw.write(id);
-                //     bw.newLine();
-                //     bw.flush();
-
-                //     bw.write(des);
-                //     bw.newLine();
-                //     bw.flush();
-
-                //     bw.write(sal);
-                //     bw.newLine();
-                //     bw.flush();
-                // }
-                // else{
-                //     bw.write("Not Found");
-                //     bw.newLine();
-                //     bw.flush();
-                // }
     
                 delimeter = br.readLine();
             }

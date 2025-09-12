@@ -1,0 +1,24 @@
+Before:
+EDIT	NAME	EMPLOYEE_ID	DESIGNATION	SALARY
+Edit	Ritam Ghosh	45321	SW Dev	2500
+Edit	Jisnoo	12345	Res Sct	25000
+row(s) 1 - 2 of 2		
+
+Server:
+Waiting for client ...
+Client hit
+ID: 12345 is successfully deleted
+Closing server...
+
+Client:
+Enter 1 to enter employee id or 2 to exit:
+1
+Enter id:
+12345
+Enter 1 to enter employee id or 2 to exit:
+2
+
+After:
+EDIT	NAME	EMPLOYEE_ID	DESIGNATION	SALARY
+Edit	Ritam Ghosh	45321	SW Dev	2500
+row(s) 1 - 1 of 1		
