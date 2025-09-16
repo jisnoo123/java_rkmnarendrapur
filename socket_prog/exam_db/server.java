@@ -29,7 +29,7 @@ public class server{
                 type = "Math";
             }
 
-            PreparedStatement pst = con.prepareStatement("select * from DATABASE.QUESTIONS where TYPE=?");
+            PreparedStatement pst = con.prepareStatement("select * from jisnoo.QUESTIONS where TYPE=?");
             pst.setString(1, type); // Fill the placeholder '?' in the statement
 
             ResultSet res = pst.executeQuery(); // Returns the table as a ResultSet object

@@ -8,7 +8,7 @@ public class connect {
         try {
             Class.forName("oracle.jdbc.OracleDriver"); //register driver
 
-            con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "system", "prith082004"); //create connection object
+            con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "system", "manager"); //create connection object
         } 
         catch (Exception e) {
         }

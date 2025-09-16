@@ -1,0 +1,40 @@
+Data:
+EDIT	QID	TYPE	QUESTION	OPT1	OPT2	OPT3	OPT4	CORR_ANS
+Edit	1	C	Who created C?	Dennis Ritchie	Monty Python Guy	Linus	Ritam	1
+Edit	2	C	Where was C created?	Bletchley Park	AT&T Bell Labs	India	Antarctica	2
+Edit	3	Math	2+2=?	5	6	4	2	3
+Edit	4	Java	Creator of Java?	James Gosling	Bruce Wayne	Dennis Ritchie	Linus	1
+Edit	5	Java	Logo of Java?	Coffee	Oak	Country	Planet	1
+Edit	6	Math	Ramanujan is from which part of Ind?	North Ind	West Ind	East Ind	South Ind	4
+Edit	7	C	What type of language is C?	High Lvl	Mid Lvl	Low lvl	Intermediate Lvl	2
+Edit	8	Math	Who discovered 0?	Aryabhatta	Ritam	Ramanujan	Ravula	1
+Edit	9	Java	Where is Java primarily used?	Industries	Schools	Research	Dev	1
+row(s) 1 - 9 of 9		
+
+Server:
+Server waiting....
+Client hit
+Questions finished
+
+Client:
+Enter 1 for C, 2 for Java or 3 for Math:
+1
+Question: Who created C?
+1) Dennis Ritchie
+2) Monty Python Guy
+3) Linus
+4) Ritam
+1
+Question: Where was C created?
+1) Bletchley Park
+2) AT&T Bell Labs
+3) India
+4) Antarctica
+2
+Question: What type of language is C?
+1) High Lvl
+2) Mid Lvl
+3) Low lvl
+4) Intermediate Lvl
+2
+Marks: 3.0
