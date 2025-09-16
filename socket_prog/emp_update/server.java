@@ -20,27 +20,46 @@ class server{
 
             while(delimeter.equals("begin")){
                 String id = br.readLine();
-                String name = br.readLine();
-                String des = br.readLine();
-                String sal = br.readLine();
-
-                PreparedStatement pst = con.prepareStatement("UPDATE EMPLOYEE
-                                        SET EMPLOYEE_NAME = ?, EMPLOYEE_DES = ?, EMPLOYEE_SAL = ?
-                                        WHERE EMPLOYEE_ID = ?;");
-                pst.setString(1, name);
-                pst.setString(2, des);
-                pst.setString(3, sal);
-                pst.setString(4, id);
+                PreparedStatement check_pst = con.prepareStatement("SELECT * FROM jisnoo.EMPLOYEE WHERE EMPLOYEE_ID = ?");
+                check_pst.setString(1, id);
+                ResultSet rs = check_pst.executeQuery();
                 
-                int t = pst.executeUpdate();
+                int ct = 0;
 
-                if(t>0){
-                    System.out.println("ID: " + id + " is successfully updated");
+                while(rs.next()){
+                    ct++;
+                }
+
+                if(ct == 0){
+                    String msg = "Employee with this ID does not exist" ;
+                    bw.write(msg);
+                    bw.newLine();
+                    bw.flush();
                 }
                 else{
-                    System.out.println("Not updated");
+                    //Write good to client if such an ID does exist
+                    bw.write("good");
+                    bw.newLine();
+                    bw.flush();
+                    
+                    String name = br.readLine();
+                    String des = br.readLine();
+                    String sal = br.readLine();
+                    PreparedStatement pst = con.prepareStatement("UPDATE jisnoo.EMPLOYEE SET NAME = ?, DESIGNATION = ?, SALARY = ? WHERE EMPLOYEE_ID = ?");
+                    pst.setString(1, name);
+                    pst.setString(2, des);
+                    pst.setString(3, sal);
+                    pst.setString(4, id);
+                    
+                    int t = pst.executeUpdate();
+
+                    if(t>0){
+                        System.out.println("ID: " + id + " is successfully updated");
+                    }
+                    else{
+                        System.out.println("Not updated");
+                    }
                 }
-    
                 delimeter = br.readLine();
             }
 

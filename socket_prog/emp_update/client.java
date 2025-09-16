@@ -26,34 +26,40 @@ class client{
                     
                     System.out.println("Enter id:");
                     id = sc.nextLine();
-
                     //Send ID to server
-
                     bw.write(id);
                     bw.newLine();
                     bw.flush();
 
-                    System.out.println("Enter new name:");
-                    name = sc.nextLine();
+                    String msg;
+                    msg = br.readLine();
 
-                    bw.write(name);
-                    bw.newLine();
-                    bw.flush();
+                    if(msg.equals("good")){
+                       
+                        System.out.println("Enter new name:");
+                        name = sc.nextLine();
 
-                    System.out.println("Enter new salary:");
-                    des = sc.nextLine();
+                        bw.write(name);
+                        bw.newLine();
+                        bw.flush();
 
-                    bw.write(des);
-                    bw.newLine();
-                    bw.flush();
+                        System.out.println("Enter new designation:");
+                        des = sc.nextLine();
 
-                    System.out.println("Enter new salary:");
-                    sal = sc.nextLine();
+                        bw.write(des);
+                        bw.newLine();
+                        bw.flush();
 
-                    bw.write(sal);
-                    bw.newLine();
-                    bw.flush();
-                    
+                        System.out.println("Enter new salary:");
+                        sal = sc.nextLine();
+
+                        bw.write(sal);
+                        bw.newLine();
+                        bw.flush();
+                    }
+                    else{
+                        System.out.println(msg);
+                    }
                     break;
                 
                 case 2: 

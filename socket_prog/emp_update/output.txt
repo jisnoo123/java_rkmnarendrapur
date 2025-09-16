@@ -1,24 +1,43 @@
-Before:
-EDIT	NAME	EMPLOYEE_ID	DESIGNATION	SALARY
-Edit	Ritam Ghosh	45321	SW Dev	2500
-Edit	Jisnoo	12345	Res Sct	25000
-row(s) 1 - 2 of 2		
+Data before:
 
-Server:
-Waiting for client ...
-Client hit
-ID: 12345 is successfully deleted
-Closing server...
+EDIT	NAME	EMPLOYEE_ID	DESIGNATION	SALARY
+Edit	Jisnoo	12345	Res Sct	1200
+Edit	Ritam	1900	CEO	10000
+Edit	Ayan Das	45321	SW Engg	1256
+row(s) 1 - 3 of 3		
+
+
+Output:
 
 Client:
 Enter 1 to enter employee id or 2 to exit:
 1
 Enter id:
+109984
+Employee with this ID does not exist
+Enter 1 to enter employee id or 2 to exit:
+1
+Enter id:
 12345
+Enter new name:
+Jisnoo Dev Pal
+Enter new designation:
+Sr. Res Sci
+Enter new salary:
+10000
 Enter 1 to enter employee id or 2 to exit:
 2
 
-After:
+Server:
+Waiting for client ...
+Client hit
+ID: 12345 is successfully updated
+Closing server...
+
+Data after:
+
 EDIT	NAME	EMPLOYEE_ID	DESIGNATION	SALARY
-Edit	Ritam Ghosh	45321	SW Dev	2500
-row(s) 1 - 1 of 1		
+Edit	Jisnoo Dev Pal	12345	Sr. Res Sci	10000
+Edit	Ritam	1900	CEO	10000
+Edit	Ayan Das	45321	SW Engg	1256
+row(s) 1 - 3 of 3		
