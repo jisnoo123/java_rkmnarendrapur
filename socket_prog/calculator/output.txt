@@ -1,0 +1,12 @@
+Server:
+Waiting for client hit Client hit
+Received: 4+5
+
+Client:
+Enter first number:
+4
+Enter second number:
+5
+Enter operation (+, -, /, *):
++
+Result: 9
