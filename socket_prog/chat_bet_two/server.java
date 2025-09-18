@@ -39,12 +39,14 @@ public class server{
                 public void run(){
                     try{
                         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
-
+                        
                         while(true){
-                            String s = sc.nextLine();
-                            bw.write(s);
-                            bw.newLine();
-                            bw.flush();
+                            synchronized(sc){
+                                String s = sc.nextLine();
+                                bw.write(s);
+                                bw.newLine();
+                                bw.flush();
+                            }
                         }     
                     }
                     catch(Exception e){}           
