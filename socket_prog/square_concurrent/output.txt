@@ -1,0 +1,16 @@
+Server:
+Server waiting for client...
+Client hit
+Server waiting for client...
+Client hit
+Server waiting for client...
+
+Client 1:
+Enter number:
+4
+Square is : 16
+
+Client 2:
+Enter number:
+3
+Square is : 9
