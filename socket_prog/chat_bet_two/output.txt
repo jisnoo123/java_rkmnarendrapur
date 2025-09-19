@@ -1,0 +1,25 @@
+Server:
+Alone in the chat
+Client has joined the chat!
+hi friend
+Client: hello friend
+where are you from friend?
+Client: i am from kolkata
+Client: and you?
+i am from BB hostel of RKM
+Narendrapur
+Client: oh
+Client: bye man
+yeah man bye
+
+Client:
+Server: hi friend
+hello friend
+Server: where are you from friend?
+i am from kolkata
+and you?
+Server: i am from BB hostel of RKM
+Server: Narendrapur
+oh
+bye man
+Server: yeah man bye

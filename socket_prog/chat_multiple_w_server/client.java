@@ -15,7 +15,7 @@ public class client{
                     
                     while(true){
                         String read_str = br.readLine();
-                        System.out.println("Server: "+ read_str);
+                        System.out.println(read_str);
                     }
                 }
                 catch(Exception e){}
